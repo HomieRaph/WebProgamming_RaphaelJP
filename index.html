@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+
+
+<!--Navbar Tambahan-->
+  <style>
+    .navbar-top {
+      background-image: url('/pascal-swier-otuM-nw-_NY-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+  
+  <nav class="navbar-top text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col text-right">
+          Nomor Telepon: 123-456-789<br>
+          Alamat: 12312321<br>
+          <button class="btn btn-outline-dark btn-lg custom2-btn" style="height: 55px; width: 155px; margin-bottom: 10px;margin-top: 10px;" >Register Now</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container" style="padding-bottom: 0px;">
+      <a class="navbar-brand" href="#" style="padding-top: 0px;">
+        <img src="Black Red Simple Modern Football Academy Logo.png" alt="UKM FUTSAL Logo" style="height: 145px; width: auto; margin-left: -0px; padding-top:0px; margin-top: -3px;">WEBSITE UKM
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="padding-top:10px ;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+
+        </ul>
+
+
+      </div>
+      
+    </div>
+
+  </nav>
+
+
+  <li>
+    <a href="#">  <button id="toggleNavbar" class="btn btn-danger btn-lg, nav-item" style="position: fixed; top: 158px; right: 49%; height: fit-content;">
+      <i id="fas fa-arrow-up"></i>
+    </button></a>
+  </li>
+  
+ <!--Script Untuk Panah Navbar-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const navbar = document.querySelector('.navbar');
+      const toggleNavbar = document.getElementById('toggleNavbar');
+  
+      toggleNavbar.addEventListener('click', function() {
+        navbar.classList.toggle('navbar-up');
+        // Mengubah posisi tombol saat navbar naik atau turun
+        if (navbar.classList.contains('navbar-up')) {
+          toggleNavbar.style.top = '20px'; // Sesuaikan posisi tombol saat navbar naik
+        } else {
+          toggleNavbar.style.top = '170px'; // Sesuaikan posisi tombol saat navbar turun
+        }
+      });
+    });
+  </script>
+  
+<!--Style Untuk Panah Navbar-->
+  <style>
+    .navbar-up {
+      transform: translateY(-100%);
+    }
+
+    .btn-down {
+      top: calc(170px - 56px); /* Adjust the value based on the navbar's height */
+    }
+
+    /* Efek hover */
+    #toggleNavbar:hover {
+    transform: scale(1.2); /* Memperbesar tombol saat dihover */
+  }
+
+    .navbar {
+    transition: transform 0.5s ease-in-out; /* Menambahkan transisi untuk pergerakan navbar */
+  }
+  #toggleNavbar {
+    transition: top 0.5s ease-in-out; /* Menambahkan transisi untuk pergerakan tombol panah */
+  }
+  </style>
+
+
+
+
+  
+
+  <!-- Jumbotron --> 
+  <div class="jumbotron jumbotron-fluid text-center"> 
+    <div class="container" style="height: 175px;">
+      <h1 class="display-4" style="display: flex; justify-content: first baseline;">Welcome to Futsal Club</h1> 
+      <p style="display: flex; justify-content: first baseline; padding-left: 10px; text-align: left;" class="lead">
+        Get fit, stay fit. Our Futsal Club offers a wide range of fitness programs tailored to suit individuals of all ages and fitness levels. Whether you're a beginner or an experienced athlete, our experienced trainers are here to help you achieve your fitness goals. Join us today and take the first step towards a healthier lifestyle.
+      </p>  
+      <a  class="btn btn-outline-dark btn-lg custom-btn" style="display: flex; justify-content: first baseline; margin-right: 955px; margin-top: 40px;" href="loading.html?duration=1000" role="button">Register Now</a>
+    </div> 
+  </div> 
+
+  <!-- Content Section --> 
+  <div class="container" style=> 
+    <div class="card-deck">
+      <div class="col-md-4 mb-4"> 
+        <div class="card"> 
+          <img src="tobias-flyckt-5yNJx9NO3Yc-unsplash.jpg" class="card-img-top" alt="..."> 
+          <div class="card-body"> 
+            <h5 class="card-title">Fitness Training</h5> 
+            <p class="card-text">Jurdiel</p> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="col-md-4 mb-4"> 
+        <div class="card"> 
+          <img src="pascal-swier-otuM-nw-_NY-unsplash.jpg" class="card-img-top" alt="..."> 
+          <div class="card-body"> 
+            <h5 class="card-title">Indoor Futsal</h5> 
+            <p class="card-text">Jurdiel</p> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="col-md-4 mb-4"> 
+        <div class="card"> 
+          <img src="chaos-soccer-gear-Cjfl8r_eYxY-unsplash.jpg" class="card-img-top" alt="..."> 
+          <div class="card-body"> 
+            <h5 class="card-title">Personal Coaching</h5> 
+            <p class="card-text">Jurdiel</p> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
+  </div> 
+
+  <div class="row justify-content-center">
+    <div class="col-sm-4">
+      <div class="team-member">
+        <img class="mx-auto rounded-circle" src="1.jpg" alt="..." />
+        <h4>Jurdiel Lappu</h4>
+        <p class="text-muted">Leader</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="team-member">
+        <img class="mx-auto rounded-circle" src="2.jpg" alt="..." />
+        <h4>Refin</h4>
+        <p class="text-muted">Vice Leader</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer text-white text-center py-3">
+    <div class="container">
+      <p style="padding-top:20px ;">&copy; 2024 Calvin Institute of Technology</p>
+    </div>
+  </footer>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
